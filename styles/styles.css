@@ -4,9 +4,10 @@ color: orange;
   margin: 20px;
   padding: 20px;
 }
-img{
-  padding: 10px;
-  margin: 10px;
+mainImg{
+  padding: 7px;
+  margin-right: 10px;
+  float: left;
 }
 
 .desc{
