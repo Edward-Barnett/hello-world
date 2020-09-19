@@ -6,16 +6,13 @@ color: orange;
 }
 mainImg{
   padding: 7px;
-  margin-right: 10px;
-  float: left;
+  margin: 10px;
 }
 
 .desc{
   padding: 10px;
   margin: 10px;
   background-color: silver;
-  height: auto;
-  float: right;
 }
 
 .main{
