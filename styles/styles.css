@@ -16,5 +16,5 @@ mainImg{
 }
 
 .main{
-  display: flexbox;
+  display: grid;
 }
