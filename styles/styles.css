@@ -22,9 +22,10 @@ mainImg{
   width: fit-content;
 }
 
-@media all and (max-width: 800px){
+@media all and (min-width: 600px){
   .desc {
     font-size:  40px;
+    background-color: olive;
   }
 }
 #topmost{
