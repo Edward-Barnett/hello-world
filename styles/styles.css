@@ -22,7 +22,7 @@ mainImg{
   height: fit-content;
   width: fit-content;
 }
-@media all and (max-width: 1700px){
+@media all and (max-width: 600px){
   .desc {
     font-size:  40px;
     background-color: olive;
