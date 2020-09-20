@@ -21,11 +21,14 @@ mainImg{
   background-color: silver;
   height: fit-content;
   width: fit-content;
+  font-size: 40px;
+  background-color: olive;
 }
-@media all and (max-width: 600px){
+
+@media all and (min-width: 600px){
   .desc {
-    font-size:  40px;
-    background-color: olive;
+    font-size:  35px;
+    background-color: silver;
   }
 }
 #topmost{
