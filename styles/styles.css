@@ -1,14 +1,19 @@
-
-
+body{
+  color:#000;
+}
 
 h1{
-font-size: 72px;
-color: orange;
+font-size: 62px;
+color: #FFF;
   margin: 7px;
   padding: 7px;
   height: fit-content;
   width: fit-content;
 }
+h2{
+  font-size: 35px;
+}
+
 mainImg{
   margin: 10px;
   height: fit-content;
@@ -18,17 +23,72 @@ mainImg{
 .desc{
   padding: 10px;
   margin: 10px 10px;
-  background-color: silver;
   height: fit-content;
   width: fit-content;
-  font-size: 40px;
-  background-color: olive;
+  font-size: 30px;
 }
 
-@media all and (min-width: 900px){
+
+.jComment{
+  color: #000;
+  font-style: italic;
+  font-size: 28px;
+}
+.styledButton{
+  text-decoration: none;
+  padding: 10px 25px;
+  background: brown;
+  color: white;
+}
+
+.styledButton:visited{
+  background: #099;
+}
+
+.styledButton:hover{
+  color: red;
+  background: white;
+}
+
+#jokeSection{
+  background-color: bisque;
+  padding: 20px 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.unJoke{
+  border-bottom: purple 4px solid;
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+}
+
+.setUp{
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+}
+
+.punchLine{
+  font-size: 34px;
+  color: blue;
+}
+.links{
+  background-color: yellow;
+  display: flex;
+  font-size:  34px;
+  color: red;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 20px 0;
+  column-count: 3;
+}
+
+
+@media only screen and (max-device-width: 480px){
   .desc {
-    font-size:  35px;
-    background-color: silver;
+    font-size: 40px;
+    background-color: olive;
   }
 }
 #topmost{
@@ -42,5 +102,3 @@ mainImg{
 .main{
   margin: 0;
 }
-
-
