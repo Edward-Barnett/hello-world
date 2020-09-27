@@ -76,7 +76,7 @@ mainImg{
 .links{
   background-color: yellow;
   display: flex;
-  font-size:  34px;
+  font-size:  24px;
   color: red;
   flex-flow: row wrap;
   justify-content: space-around;
