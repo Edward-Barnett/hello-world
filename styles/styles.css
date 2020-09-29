@@ -1,6 +1,7 @@
 body{
   color:#000;
   margin: 0;
+  font-size: 18px;
 }
 
 h1{
@@ -11,11 +12,9 @@ color: #FFF;
   height: fit-content;
   width: fit-content;
 }
+
 h2{
   font-size: 35px;
-}
-img{
-  margin: 0;
 }
 
 .desc{
@@ -26,40 +25,31 @@ img{
   font-size: 30px;
 }
 
-.mainImg{
-  display: 60%;
+.links{
+  background-color: yellow;
+  display: inline block;
+  font-size:  18px;
+  color: red;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 .displayer{
   display: flex;
+  flex-wrap: wrap;
 }
 
 .toTheSide{
-  margin-left: 0;
   background: rgba(85, 93, 94, 0.753);
+  padding: 10px;
   color: #fff;
   background: pink;
-  width: 40%;
-  padding: 10px 0 0 10px;
-}
-
-.links{
-  background-color: yellow;
-  display: inline block;
-  font-size:  24px;
-  color: red;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  padding: 20px 0;
-  margin: 0;
+  flex-grow: 1;
 }
 
 .sideLinks{
-  display: flex;
+  flex-grow: 1;
   background: blue;
-  margin-left: 0;
-  margin-right: auto;
-  width: 20%;
   padding: 10px 0 0 10px;
 }
 
@@ -81,14 +71,16 @@ img{
   font-style: italic;
   font-size: 28px;
 }
+
 .styledButton{
   text-decoration: none;
   font-size: 18px;
   padding: 8px 25px;
-  height: 38px;
+  /*height: 38px; */
   background: brown;
   color: white;
   margin-left: 7px;
+  margin-top: 7px;
   margin-right: auto;
 }
 
