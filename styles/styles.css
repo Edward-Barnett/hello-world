@@ -7,12 +7,18 @@ body{
 h1{
 font-size: 62px;
 color: #FFF;
-  padding: 20px;
-  height: fit-content;
+  padding: 7px;
+  text-align: center;
+/*  height: fit-content;
+  width: fit-content; */
 }
 
 h2{
   font-size: 35px;
+}
+
+.center-text{
+  text-align: center;
 }
 
 .desc{
@@ -23,12 +29,16 @@ h2{
   font-size: 30px;
 }
 
+.article{
+  font-size: 18px;
+  background: wheat;
+  margin-top: 0;
+}
 .links{
-  background-color: yellow;
+  background-color:yellow;
   display: flex;
   font-size:  18px;
   color: red;
-/*  justify-content: space-around;*/
   padding: 20px;
 }
 
@@ -57,7 +67,6 @@ h2{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  width: 100%;
 }
 
 @media only screen and (max-device-width: 480px){
@@ -65,9 +74,9 @@ h2{
     font-size: 40px;
     background-color: olive;
   }
-  #topmost{
-    padding: 20px;
-    margin: 0;
+  #topmost h1{
+    font-size: 6px;
+    
   }
 }
 
@@ -81,19 +90,20 @@ h2{
   text-decoration: none;
   font-size: 18px;
   padding: 20px;
-  background: brown;
+  background: green;
   color: white;
   margin: 10px;
 }
 
 .styledButton:visited{
   background: brown;
+  color: yellow;
+  text-decoration: none;
 }
 
 .styledButton:hover{
-  color: red;
-  background: white;
-  padding: 30px;
+  color: yellow;
+  background: purple;
   text-decoration: underline;
 
 }
