@@ -41,16 +41,70 @@ h2{
   font-size: 30px;
 }
 
+.center-el{
+  text-align: center;
+}
+
+.article{
+  font-size: 18px;
+  background: wheat;
+  display: flexbox;
+  flex-flow: column;
+}
+
+.color1{
+  background: rgb(107, 124, 116);
+}
+
+.article-text{
+  padding: 0px 28px 25px 28px;
+  color: white;
+}
+
+.image-and-text{
+    min-height: 320px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 0fr 4fr 1fr;
+    grid-gap: 15px;
+ }
+  
+ image-and-text2{
+  min-height: 320px;
+  padding: 20px;
+  display: inline-flex;
+  flex-wrap: wrap;
+ }
+
+.image-area{
+  width: fit-content;
+}
+
+.image-area2{
+  width: fit-content;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+.text-area{
+  padding: 15px;
+}
+
+.article-text-b{
+  display: none;
+}
+
 .phoneImg{
   height: 330px;
   width: 160px;
 }
-.article{
-  font-size: 18px;
-  background: wheat;
-  padding: 10px;
-  display: flex;
+
+.phoneImg-uncropped{
+  height: 300px;
+  max-width: 200px;
+  min-width: 200px;
 }
+
 
 .links{
   background-color:yellow;
@@ -68,9 +122,13 @@ h2{
 .toTheSide{
   background: rgba(85, 93, 94, 0.753);
   padding: 10px;
-  color: #fff;
+  color: crimson;
   background: pink;
   flex-grow: 1;
+}
+
+.big-picture{
+  width: 300px;
 }
 
 .sideLinks{
@@ -85,8 +143,7 @@ h2{
     background-color: olive;
   }
   #topmost h1{
-    font-size: 6px;
-    
+    font-size: 6px;  
   }
 }
 
