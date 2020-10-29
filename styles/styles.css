@@ -2,9 +2,13 @@ body{
   color:#000;
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  font-size: 1em;
   font-family: 'Geneva', sans-serif;
   background: beige;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 h1{
@@ -49,6 +53,7 @@ h2{
   font-size: 18px;
   background: wheat;
   display: flexbox;
+  padding: 0 1em 0 1em;
   flex-flow: column;
 }
 
@@ -65,14 +70,24 @@ h2{
     min-height: 320px;
     padding: 20px;
     display: grid;
-    grid-template-columns: 0fr 4fr 1fr;
+    grid-template-columns: 0fr 4fr 0fr;
     grid-gap: 15px;
+    background-color: #6b5b95;
+    color: white;
+    font-size: 1em;
  }
   
+ @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .image-and-text {
+    display: flex;
+    flex-flow: wrap;
+  }
+}
  image-and-text2{
   min-height: 320px;
   padding: 20px;
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
  }
 
@@ -90,7 +105,7 @@ h2{
   padding: 15px;
 }
 
-.article-text-b{
+.buttonable-text{
   display: none;
 }
 
@@ -107,7 +122,7 @@ h2{
 
 
 .links{
-  background-color:yellow;
+  background-color:yellowgreen;
   display: flex;
   font-size:  18px;
   color: red;
@@ -170,7 +185,7 @@ h2{
 
 .styledButton:hover{
   color: yellow;
-  background: purple;
+  background: #6b5b95;
   text-decoration: underline;
 
 }
