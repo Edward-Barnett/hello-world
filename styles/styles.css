@@ -38,14 +38,13 @@ h2{
 }
 
 .desc{
-  padding: 10px;
-  margin: 10px 10px;
-  height: fit-content;
-  width: fit-content;
+  text-align: center;
+ /* height: fit-content;
+  width: fit-content; */
   font-size: 30px;
 }
 
-.center-el{
+.center-text{
   text-align: center;
 }
 
