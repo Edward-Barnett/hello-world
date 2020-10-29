@@ -8,33 +8,54 @@ function loadButtons()
     {
         const thisElement = forButtons[i]
         
-        const textDisplay = document.getElementsByClassName('article-text-b')[articleCounter]
-        articleCounter++
+        const textDisplay = document.getElementsByClassName('buttonable-text')[articleCounter]
         const newButton = document.createElement('button')
         newButton.type = 'button'
         newButton.className = 'styledButton'
-        newButton.textContent = "Display"
+        newButton.id = "sequential-button" + articleCounter
+        articleCounter++
+        
+        if (i > 0)
+        {
+            newButton.disabled = true
+            newButton.textContent = '???'
+        }
+        else {            
+            newButton.textContent = "Show me!"
+        }
+
         thisElement.append(newButton)
 
         newButton.addEventListener('click', function()
         {
-            if (textDisplay.style.display === "none" || textDisplay.style.display === "")
+            if (newButton.disabled === false)
             {
-                textDisplay.style.display = "block"
-                newButton.textContent = "Hide"
-            }
-            else
-            {
-                textDisplay.style.display = "none"
-                newButton.textContent = "Reveal"
-            }
+                if (textDisplay.style.display === "none" || textDisplay.style.display === "")
+                {
+                    textDisplay.style.display = "block"
+                    newButton.textContent = "Hide"
+                }
+                else
+                {
+                    textDisplay.style.display = "none"
+                    newButton.textContent = "Reveal"
+                }
+                const idPortion = newButton.id.substring(17, newButton.id.length)
+                
+                const numeric = parseInt(idPortion) + 1
+                
+                const nextButton = document.getElementById("sequential-button" + numeric)
+                if (nextButton != null)
+                {
+                  nextButton.disabled = false
+                  nextButton.textContent = "Show me!"
+                } 
+            }            
         })
     }; 
-    
+
+   
 }
 
-function myFunction(tryer){
-    alert(tryer)
-}
 
 document.onload(loadButtons())
