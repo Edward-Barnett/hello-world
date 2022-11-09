@@ -9,9 +9,10 @@ function loadButtons()
         const thisElement = forButtons[i]
         
         const textDisplay = document.getElementsByClassName('buttonable-text')[articleCounter]
+
         const newButton = document.createElement('button')
         newButton.type = 'button'
-        newButton.className = 'styledButton'
+        newButton.className = 'slimStyledButton'
         newButton.id = "sequential-button" + articleCounter
         articleCounter++
         
@@ -24,7 +25,7 @@ function loadButtons()
             newButton.textContent = "Show me!"
         }
 
-        thisElement.append(newButton)
+        thisElement.insertBefore(newButton,thisElement.firstChild)
 
         newButton.addEventListener('click', function()
         {
