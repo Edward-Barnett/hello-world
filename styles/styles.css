@@ -20,17 +20,66 @@ color: #FFF;
   width: fit-content; */
 }
 
+.bold-caption{
+  font-weight: 900;
+  color: black;
+}
 h2{
   font-size: 35px;
 }
 
+.footnoter{
+  display: flex;
+  flex-direction: row;
+  padding-top: 3rem;
+}
+
+.cry-for-happy{
+  background-color: skyblue;
+  mIn-height: 450px;
+  font-size: 4rem;
+  font-family: Palatino monospace ;
+  font-style: italic;
+  text-align: center;
+  padding-top: 2rem;
+  border: 5px solid green;
+}
+
+.my-best-advice{
+  background-color: #AA36AA;
+  color: brown;
+  border: 5px solid purple;
+  
+}
+
+.secret-button{
+  color: inherit;
+  background-color: inherit;
+  border: none;
+  margin-left: 25%;
+  font-size: 7rem;
+}
+
+#hidden-text{
+  padding-top: 3rem;
+  font-size: 1.9rem;
+  visibility: hidden;
+}
+
 #topmost{
-  background-color: rgb(0, 119, 255);
-  padding: 10px;
+  background-color: #0f246b;
+  padding: 1rem;
  /* display: flex;
   flex-flow: row wrap;
   justify-content: space-around; */
   text-align: center;
+  color: #afbef0;
+}
+
+.lower-down{
+  padding: 12rem 0 3rem 0;
+  color: rebeccapurple;
+  font-size: 2rem;
 }
 
 .center-text{
@@ -44,8 +93,15 @@ h2{
   font-size: 30px;
 }
 
-.center-text{
-  text-align: center;
+/*
+.articles{
+  background-color: chartreuse;
+  padding: 33px;
+}
+*/
+
+.color1{
+  background: rgb(107, 124, 116);
 }
 
 .article{
@@ -54,10 +110,7 @@ h2{
   display: flexbox;
   padding: 0 1em 0 1em;
   flex-flow: column;
-}
-
-.color1{
-  background: rgb(107, 124, 116);
+  margin-bottom: 25px;
 }
 
 .article-text{
@@ -75,7 +128,7 @@ h2{
     color: white;
     font-size: 1em;
  }
-  
+ 
  @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .image-and-text {
@@ -83,7 +136,7 @@ h2{
     flex-flow: wrap;
   }
 }
- image-and-text2{
+ .image-and-text2{
   min-height: 320px;
   padding: 20px;
   display: flex;
@@ -110,7 +163,14 @@ h2{
 
 .phoneImg{
   height: 330px;
-  width: 160px;
+  /* width: 160px; */
+}
+
+.phoneImgCenter{
+  height: 330px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .phoneImg-uncropped{
@@ -122,33 +182,51 @@ h2{
 
 .links{
   background-color:yellowgreen;
-  display: flex;
   font-size:  18px;
   color: red;
-  padding: 20px;
+  padding: .5rem 0;
+}
+
+.nav-list{
+  list-style-type: none;
+  margin: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1500px;
+}
+
+.nav-item{
+  padding: 2em; 
+  background-color: cyan;
+  border: solid green .1em;
 }
 
 .displayer{
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
-.toTheSide{
-  background: rgba(85, 93, 94, 0.753);
-  padding: 10px;
-  color: crimson;
+.appliance{
+  padding: 1rem;
+  color: #0f246b;
   background: pink;
+  width: 45%;
   flex-grow: 1;
 }
 
 .big-picture{
-  width: 300px;
+  width: 100%;
+  height: auto;
 }
 
 .sideLinks{
   flex-grow: 1;
-  background: blue;
-  padding: 10px 0 0 10px;
+  background:#0f246b;
+  padding: 1rem 0 0 1rem;
+  height: 7rem;
 }
 
 @media only screen and (max-device-width: 480px){
@@ -167,13 +245,19 @@ h2{
   font-size: 28px;
 }
 
+.slimStyledButton{
+  background-color: green;
+  font-size: 1rem;
+  padding: 2rem 1rem;
+
+}
+
 .styledButton{
   text-decoration: none;
-  font-size: 18px;
-  padding: 20px;
+  font-size: 1rem;
   background: green;
   color: white;
-  margin: 10px;
+  padding: 2em;
 }
 
 .styledButton:visited{
