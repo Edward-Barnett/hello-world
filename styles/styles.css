@@ -183,8 +183,8 @@ h2{
 .links{
   background-color:yellowgreen;
   font-size:  18px;
-  color: red;
-  padding: .5rem 0;
+  display: flex;
+  padding: .5rem;
 }
 
 .nav-list{
@@ -198,9 +198,9 @@ h2{
 }
 
 .nav-item{
-  padding: 2em; 
+  padding: 7px 5px; 
   background-color: cyan;
-  border: solid green .1em;
+  border: solid green 1px;
 }
 
 .displayer{
@@ -235,8 +235,9 @@ h2{
     background-color: olive;
   }
   #topmost h1{
-    font-size: 6px;  
+    font-size: 46px;  
   }
+  
 }
 
 .jComment{
@@ -257,7 +258,9 @@ h2{
   font-size: 1rem;
   background: green;
   color: white;
-  padding: 2em;
+  padding: 0 2em;
+  margin: 1px;
+  border: 2px solid purple;
 }
 
 .styledButton:visited{
