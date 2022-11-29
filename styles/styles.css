@@ -68,16 +68,22 @@ h2{
 
 #topmost{
   background-color: #0f246b;
-  padding: 1rem;
+  padding: 2rem;
  /* display: flex;
   flex-flow: row wrap;
   justify-content: space-around; */
   text-align: center;
   color: #afbef0;
+  margin-bottom: 0;
+}
+
+.shadowed{
+  color: whitesmoke;
+  text-shadow: 6px 6px 2px black;
 }
 
 .lower-down{
-  padding: 12rem 0 3rem 0;
+  padding: 3rem 0 3rem 0;
   color: rebeccapurple;
   font-size: 2rem;
 }
@@ -93,24 +99,33 @@ h2{
   font-size: 30px;
 }
 
-/*
+
+
 .articles{
-  background-color: chartreuse;
-  padding: 33px;
-}
-*/
+  margin-top: 9;
+} 
+
+
 
 .color1{
   background: rgb(107, 124, 116);
+
+}
+
+.text-text{
+  padding: 7px 7px 7px 16px;
 }
 
 .article{
   font-size: 18px;
   background: wheat;
   display: flexbox;
-  padding: 0 1em 0 1em;
   flex-flow: column;
+  /*margin-top: 0;
   margin-bottom: 25px;
+*/  
+  padding-top: 7px;
+  padding-left: 7px;
 }
 
 .article-text{
@@ -201,6 +216,7 @@ h2{
   padding: 7px 5px; 
   background-color: cyan;
   border: solid green 1px;
+  margin-bottom: 44px;
 }
 
 .displayer{
@@ -215,11 +231,14 @@ h2{
   background: pink;
   width: 45%;
   flex-grow: 1;
+  
 }
 
 .big-picture{
   width: 100%;
   height: auto;
+  margin-top: 4px;
+
 }
 
 .sideLinks{
@@ -227,6 +246,7 @@ h2{
   background:#0f246b;
   padding: 1rem 0 0 1rem;
   height: 7rem;
+  margin-top: 0;
 }
 
 @media only screen and (max-device-width: 480px){
@@ -246,6 +266,11 @@ h2{
   font-size: 28px;
 }
 
+.floatButton{
+ text-align: center;
+ padding: 3rem;
+}
+
 .slimStyledButton{
   background-color: green;
   font-size: 1rem;
@@ -258,7 +283,7 @@ h2{
   font-size: 1rem;
   background: green;
   color: white;
-  padding: 0 1em;
+  padding: 1em 1em;
   margin: 1px;
   border: 2px solid purple;
 }
