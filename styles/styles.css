@@ -286,6 +286,8 @@ h2{
   padding: 1em 1em;
   margin: 1px;
   border: 2px solid purple;
+
+  width: fit-content;
 }
 
 .styledButton:visited{
