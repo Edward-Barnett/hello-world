@@ -5,6 +5,8 @@ body{
   font-size: 1em;
   font-family: 'Geneva', sans-serif;
   background: beige;
+  height: 100%;
+  width: 100%;
 }
 
 * {
