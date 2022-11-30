@@ -5,25 +5,25 @@ body{
   font-size: 1em;
   font-family: 'Geneva', sans-serif;
   background: beige;
-  height: 100%;
-  width: 100%;
 }
 
-html{
-  width: 100%;
-}
 
 * {
   box-sizing: border-box;
 }
 
 h1{
+  margin: 0;
 font-size: 62px;
 color: #FFF;
-  padding: 7px;
+  padding: 6px;
   text-align: center;
 /*  height: fit-content;
   width: fit-content; */
+}
+
+.mainImg{
+  width: 30%;
 }
 
 .bold-caption{
@@ -74,7 +74,7 @@ h2{
 
 #topmost{
   background-color: #0f246b;
-  padding: 2rem;
+  padding-bottom: .1rem;
  /* display: flex;
   flex-flow: row wrap;
   justify-content: space-around; */
@@ -156,6 +156,10 @@ h2{
     display: flex;
     flex-flow: wrap;
   }
+
+  .mainImg{
+    width: 100%;
+  }
 }
  .image-and-text2{
   min-height: 320px;
@@ -206,6 +210,7 @@ h2{
   font-size:  18px;
   display: flex;
   padding: .5rem;
+  margin-top: 0;
 }
 
 .nav-list{
@@ -222,7 +227,7 @@ h2{
   padding: 7px 5px; 
   background-color: cyan;
   border: solid green 1px;
-  margin-bottom: 44px;
+  margin-bottom: 22px;
 }
 
 .displayer{
@@ -274,7 +279,7 @@ h2{
 
 .floatButton{
  text-align: center;
- padding: 3rem;
+ padding-left: 50%;
 }
 
 .slimStyledButton{
@@ -289,7 +294,7 @@ h2{
   font-size: 1rem;
   background: green;
   color: white;
-  padding: 1em 1em;
+  padding: .5em .5em;
   margin: 1px;
   border: 2px solid purple;
   display: block;
